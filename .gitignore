@@ -1,0 +1,8 @@
+#Ignore tests
+test.html
+
+#Ignore experiment
+experiment.html
+
+#ignore colors
+colors.html
