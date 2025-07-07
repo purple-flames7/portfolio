@@ -15,26 +15,20 @@
     <!-- Navbar -->
     <nav>
       <a href="index.html">
-        <img src="images/nk-bg.png" alt="NK" style="height: 40px" />
+        <img src="images/nk-bg.png" alt="NK" style="height: 70px" />
       </a>
-      <a
-        href="index.html"
-        style="
-          text-decoration: none;
-          color: #f2994a;
-          text-decoration: underline;
-        "
-        >Home</a
-      >
-      <a href="about.html" style="text-decoration: none; color: #1e1e1e"
-        >About</a
-      >
-      <a href="projects.html" style="text-decoration: none; color: #1e1e1e"
-        >Projects</a
-      >
-      <a href="contact.html" style="text-decoration: none; color: #1e1e1e"
-        >Contact</a
-      >
+      <div class="hamburger" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+
+      <div class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </div>
     </nav>
 
     <header>
@@ -73,5 +67,11 @@
     <footer>
       <p>© 2025 Nicole Katia. All rights reserved.</p>
     </footer>
+    <script>
+      function toggleMenu() {
+        const nav = document.getElementById("navlinks");
+        nav.classList.toggle("active");
+      }
+    </script>
   </body>
 </html>

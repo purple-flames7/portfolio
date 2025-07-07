@@ -13,70 +13,69 @@
   </head>
   <body>
     <!-- Navbar -->
-    <nav>
-      <a href="index.html">
-        <img src="images/nk-bg.png" alt="NK" style="height: 40px" />
-      </a>
-
-      <a href="index.html" style="text-decoration: none; color: #1e1e1e"
-        >Home</a
-      >
-      <a
-        href="about.html"
-        style="
-          text-decoration: none;
-          color: #f2994a;
-          text-decoration: underline;
-        "
-        >About</a
-      >
-      <a href="projects.html" style="text-decoration: none; color: #1e1e1e"
-        >Projects</a
-      >
-      <a href="contact.html" style="text-decoration: none; color: #1e1e1e"
-        >Contact</a
-      >
-    </nav>
 
     <header>
       <h1>About Me</h1>
     </header>
 
-    <div class="container">
-      <section>
-        <h2 class="section-title">Hi, I’m Katia.</h2>
-        <p>
-          I’m a <span class="highlight">web developer</span>, creative thinker,
-          and lifelong learner. I started learning web development to open up
-          more opportunities for myself and others — and I’ve fallen in love
-          with the power of turning ideas into interactive, inclusive digital
-          experiences.
-        </p>
-      </section>
+    <nav>
+      <a href="index.html">
+        <img src="images/nk-bg.png" alt="NK" style="height: 60px" />
+      </a>
+      <div class="hamburger" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+
+      <div class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
+
+    <div class="container about-flex">
+      <div class="image-box">
+        <img src="images/IMG_3875.jpg" alt="Nicole Katia" />
+      </div>
+      <div class="text-box">
+        <section>
+          <h2 class="section-title">Hi, I’m Katia.</h2>
+          <p>
+            I’m a <span class="highlight">web developer</span>, creative thinker
+            and lifelong learner. I started learning web development to open up
+            more opportunities for myself and others and I’ve fallen in love
+            with the power of turning ideas into interactive, inclusive digital
+            experiences.
+          </p>
+        </section>
+      </div>
 
       <section>
         <h2 class="section-title">Why I Build Websites</h2>
         <p>
-          For me, code is creative. I love that you can start with nothing —
-          just an idea — and build something beautiful, functional, and alive.
-          Every project is a space to express myself, solve real problems, and
-          design something that works for people.
+          For me, code is creative. I love that you can start with nothing, just
+          an idea, and build something beautiful, functional and alive. Every
+          project is a space to express myself, solve real problems, and design
+          something that works for people.
         </p>
       </section>
 
       <section>
         <h2 class="section-title">What I Care About</h2>
         <p>
-          I’m passionate about sustainability, inclusivity, and community. I
-          believe tech should serve people — all people — and I want to build
-          with intention. I’m especially inspired by projects that align with
-          the <span class="highlight">Sustainable Development Goals</span>,
-          champion marginalized voices, and expand access.
+          I’m passionate about sustainability, inclusivity and community. I
+          believe tech should serve everyone and I want to build with intention.
+          I’m especially inspired by projects that align with the
+          <span class="highlight">Sustainable Development Goals</span>, amplify
+          marginalized voices and expand access.
         </p>
         <p>
-          As a proud queer African woman, I’m always thinking about how we
-          create digital spaces that are welcoming, joyful, and empowering. That
-          energy fuels my work.
+          I bring a deep commitment to inclusivity and joy into every project,
+          especially for communities that have historically been excluded. That
+          perspective fuels my work.
         </p>
       </section>
 
@@ -95,5 +94,11 @@
     <footer>
       <p>© 2025 Nicole Katia. All rights reserved.</p>
     </footer>
+    <script>
+      function toggleMenu() {
+        const nav = document.getElementById("navlinks");
+        nav.classList.toggle("active");
+      }
+    </script>
   </body>
 </html>
