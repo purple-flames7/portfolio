@@ -1,45 +1,48 @@
-<!-- contact.html -->
+<!-- Contact page -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact | Nicole Katia</title>
+    <!-- Link to google fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Open+Sans&display=swap"
       rel="stylesheet"
     />
+    <!-- Link to css style sheet -->
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-    <nav>
-      <a href="index.html">
-        <img src="images/nk-bg.png" alt="NK" style="height: 40px" />
-      </a>
-      <a href="index.html" style="text-decoration: none; color: #1e1e1e"
-        >Home</a
-      >
-      <a href="about.html" style="text-decoration: none; color: #1e1e1e"
-        >About</a
-      >
-      <a href="projects.html" style="text-decoration: none; color: #1e1e1e"
-        >Projects</a
-      >
-      <a
-        href="contact.html"
-        style="
-          text-decoration: none;
-          color: #f2994a;
-          text-decoration: underline;
-        "
-        >Contact</a
-      >
-    </nav>
 
+  <body>
+    <!-- Header -->
     <header>
       <h1>Get In Touch</h1>
     </header>
 
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="navbar-logo">
+        <a href="index.html">
+          <img src="images/nk-bg.png" alt="NK Logo" />
+        </a>
+      </div>
+
+      <div class="hamburger" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+
+      <div class="navbar-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
+
+    <!-- Main content -->
     <div class="container">
       <h2 class="section-title">I'd love to hear from you.</h2>
       <p>
@@ -63,8 +66,16 @@
       </div>
     </div>
 
+    <!-- Footer -->
     <footer>
       <p>© 2025 Nicole Katia. All rights reserved.</p>
     </footer>
+
+    <script>
+      function toggleMenu() {
+        const nav = document.getElementById("navLinks");
+        nav.classList.toggle("active");
+      }
+    </script>
   </body>
 </html>

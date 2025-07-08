@@ -4,5 +4,8 @@ test.html
 #Ignore experiment
 experiment.html
 
-#ignore colors
+#Ignore colors
 colors.html
+
+#Ignore pro
+pro.html

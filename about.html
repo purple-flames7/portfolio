@@ -1,34 +1,39 @@
-<!-- about.html -->
+<!-- About page-->
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About | Nicole Katia</title>
+    <!-- Link to google fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Open+Sans&display=swap"
       rel="stylesheet"
     />
+    <!-- Link to css style sheet -->
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- Navbar -->
-
+    <!-- Header section -->
     <header>
       <h1>About Me</h1>
     </header>
 
-    <nav>
-      <a href="index.html">
-        <img src="images/nk-bg.png" alt="NK" style="height: 60px" />
-      </a>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="navbar-logo">
+        <a href="index.html">
+          <img src="images/nk-bg.png" alt="NK logo" />
+        </a>
+      </div>
+
       <div class="hamburger" onclick="toggleMenu()">
         <div></div>
         <div></div>
         <div></div>
       </div>
 
-      <div class="nav-links" id="navLinks">
+      <div class="navbar-links" id="navLinks">
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="projects.html">Projects</a>
@@ -36,10 +41,12 @@
       </div>
     </nav>
 
+    <!-- Main content -->
     <div class="container about-flex">
       <div class="image-box">
         <img src="images/IMG_3875.jpg" alt="Nicole Katia" />
       </div>
+
       <div class="text-box">
         <section>
           <h2 class="section-title">Hi, I’m Katia.</h2>
@@ -84,7 +91,7 @@
         <p>
           I’m a quiet nerd with a big heart and a sharp sense of humor. I love
           good design, messy sketchbooks, great music, and big ideas. My friends
-          joke that I can do anything — and I take that as a challenge.
+          joke that I can do anything, I take that as a challenge.
         </p>
       </section>
 
@@ -96,7 +103,7 @@
     </footer>
     <script>
       function toggleMenu() {
-        const nav = document.getElementById("navlinks");
+        const nav = document.getElementById("navLinks");
         nav.classList.toggle("active");
       }
     </script>
