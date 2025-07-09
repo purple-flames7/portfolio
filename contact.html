@@ -50,6 +50,7 @@
         to say hi — drop me a message. I’m currently open for freelance work and
         opportunities that align with design, tech, and community.
       </p>
+
       <p>
         Email me at:
         <a href="mailto:nicolekatia04@gmail.com" class="btn"
@@ -64,6 +65,25 @@
           >LinkedIn</a
         >
       </div>
+
+      <!-- Contact form -->
+      <section class="contact-section container">
+        <h2 class="section-title">Contact Me</h2>
+        <p class="contact-intro">Have a project in mind? Let’s talk.</p>
+
+        <form action="#" method="POST" class="contact-form">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="_replyto" required />
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" required></textarea>
+
+          <button type="submit">Send Message</button>
+        </form>
+      </section>
     </div>
 
     <!-- Footer -->
@@ -71,11 +91,7 @@
       <p>© 2025 Nicole Katia. All rights reserved.</p>
     </footer>
 
-    <script>
-      function toggleMenu() {
-        const nav = document.getElementById("navLinks");
-        nav.classList.toggle("active");
-      }
-    </script>
+    <!-- Link to JS file -->
+    <script src="main.js"></script>
   </body>
 </html>

@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nicole Katia | Web Developer</title>
+    <!-- Link to google fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Open+Sans&display=swap"
       rel="stylesheet"
@@ -42,21 +43,12 @@
     </nav>
 
     <!-- Main content -->
-    <div class="container">
-      <section>
-        <h2 class="section-title">Featured Project: BuzzBrain</h2>
-        <div class="project">
-          <h3>BuzzBrain: Interactive Quiz App</h3>
-          <p>
-            A dynamic quiz application featuring multiple categories, difficulty
-            levels, and a bilingual (English & Swahili) interface. Built with
-            HTML, CSS, and JavaScript.
-          </p>
-          <a class="btn" href="https://buzzbrain.netlify.app" target="_blank"
-            >View Project</a
-          >
-        </div>
-      </section>
+    <section class="featured-project container">
+      <h2 class="section-title">Featured Project</h2>
+      <div id="featured-project-card" class="project-card">
+        <!-- JS will populate this -->
+      </div>
+    </section>
 
       <section>
         <h2 class="section-title">About Me</h2>
@@ -73,11 +65,9 @@
     <footer>
       <p>© 2025 Nicole Katia. All rights reserved.</p>
     </footer>
-    <script>
-      function toggleMenu() {
-        const nav = document.getElementById("navLinks");
-        nav.classList.toggle("active");
-      }
-    </script>
+   
+    <!-- Link to JS file -->
+     <script src="main.js"></script>
+     
   </body>
 </html>
