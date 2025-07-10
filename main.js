@@ -1,10 +1,21 @@
-// 🔄 Toggle mobile nav menu
+//  Toggle mobile nav menu
 function toggleMenu() {
   const nav = document.getElementById("navLinks");
   if (nav) {
     nav.classList.toggle("active");
   }
 }
+
+// AOS animation setup
+document.addEventListener("DOMContentLoaded", function () {
+  if (typeof AOS !== "undefined") {
+    AOS.init({
+      duration: 1000,
+      once: true,
+      easing: "ease-in-out",
+    });
+  }
+});
 
 // 🧠 Featured Project Rotator (on index.html only)
 const projects = [

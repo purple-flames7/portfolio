@@ -10,6 +10,9 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Open+Sans&display=swap"
       rel="stylesheet"
     />
+    <!-- Link to AOS -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
     <!-- Link to css style sheet -->
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -49,8 +52,8 @@
 
       <div class="text-box">
         <section>
-          <h2 class="section-title">Hi, I’m Katia.</h2>
-          <p>
+          <h2 class="section-title" data-aos="fade-up">Hi, I’m Katia.</h2>
+          <p data-aos="fade-up" data-aos-delay="200">
             I’m a <span class="highlight">web developer</span>, creative thinker
             and lifelong learner. I started learning web development to open up
             more opportunities for myself and others and I’ve fallen in love
@@ -104,5 +107,9 @@
 
     <!-- Link to JS file -->
     <script src="main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

@@ -10,9 +10,14 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Open+Sans&display=swap"
       rel="stylesheet"
     />
+
+    <!-- Link to AOS -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
     <!-- Link to css style sheet -->
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
     <!-- Header -->
     <header>
@@ -50,24 +55,26 @@
       </div>
     </section>
 
-      <section>
-        <h2 class="section-title">About Me</h2>
-        <p>
-          I'm a web developer, creative thinker, and passionate human. I build
-          websites that connect people, purpose, and possibility. I'm especially
-          drawn to projects that align with sustainability, inclusivity, and
-          community. Let's bring your idea to life.
-        </p>
-        <a class="btn" href="about.html">More About Me</a>
-      </section>
-    </div>
+    <section class="about-me-section container" data-aos="fade-up">
+      <h2 class="section-title">About Me</h2>
+      <p>
+        I'm a web developer, creative thinker, and passionate human. I build
+        websites that connect people, purpose, and possibility. I'm especially
+        drawn to projects that align with sustainability, inclusivity, and
+        community. Let's bring your idea to life.
+      </p>
+      <a class="btn" href="about.html">More About Me</a>
+    </section>
 
     <footer>
       <p>© 2025 Nicole Katia. All rights reserved.</p>
     </footer>
-   
+
     <!-- Link to JS file -->
-     <script src="main.js"></script>
-     
+    <script src="main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
