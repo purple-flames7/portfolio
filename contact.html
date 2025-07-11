@@ -10,6 +10,8 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Open+Sans&display=swap"
       rel="stylesheet"
     />
+    <!-- Link to AOS -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
     <!-- Link to css style sheet -->
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -44,7 +46,9 @@
 
     <!-- Main content -->
     <div class="container">
-      <h2 class="section-title">I'd love to hear from you.</h2>
+      <h2 class="section-title" data-aos="fade-right">
+        I'd love to hear from you.
+      </h2>
       <p>
         Whether you’ve got a project in mind, a collaboration idea, or just want
         to say hi — drop me a message. I’m currently open for freelance work and
@@ -68,10 +72,16 @@
 
       <!-- Contact form -->
       <section class="contact-section container">
-        <h2 class="section-title">Contact Me</h2>
+        <h2 class="section-title" data-aos="fade-right">Contact Me</h2>
         <p class="contact-intro">Have a project in mind? Let’s talk.</p>
 
-        <form action="#" method="POST" class="contact-form">
+        <form
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          action="#"
+          method="POST"
+          class="contact-form"
+        >
           <label for="name">Name</label>
           <input type="text" id="name" name="name" required />
 
@@ -93,5 +103,6 @@
 
     <!-- Link to JS file -->
     <script src="main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
   </body>
 </html>
