@@ -33,7 +33,7 @@ const projects = [
     description:
       "A vibrant responsive site for a school offering music and language training.",
     tech: "HTML, CSS, JavaScript",
-    image: "images/music-school-preview.png",
+    image: "images/Saxlink.png",
     live: "#",
     github: "#",
   },
