@@ -1,4 +1,4 @@
-/* 0. VARIABLES */
+/* Variables */
 :root {
   --primary: #222222;
   --accent1: #f77f00;
@@ -6,7 +6,7 @@
   --background: #f3f8f0;
 }
 
-/* 1. RESET & BASE STYLES */
+/* Reset and base styles */
 * {
   margin: 0;
   padding: 0;
@@ -31,7 +31,7 @@ img {
   height: auto;
 }
 
-/* 2. TYPOGRAPHY */
+/* Typography */
 .section-title {
   font-family: "Poppins", sans-serif;
   font-size: 2rem;
@@ -45,7 +45,7 @@ img {
   font-weight: bold;
 }
 
-/* 3. LAYOUT UTILITIES */
+/* Layout */
 .container {
   padding: 0 2rem;
   max-width: 768px;
@@ -53,7 +53,7 @@ img {
   text-align: justify;
 }
 
-/* 4. HEADER */
+/* Header */
 header {
   background: var(--primary);
   color: white;
@@ -72,7 +72,7 @@ header p {
   color: var(--accent1);
 }
 
-/* 5. NAVBAR */
+/* Navbar */
 .navbar {
   background: var(--background);
   border-bottom: 2px solid var(--accent1);
@@ -105,7 +105,7 @@ header p {
   color: var(--accent1);
 }
 
-/* 6. HAMBURGER MENU */
+/* Hamburger menu */
 .hamburger {
   display: none;
   flex-direction: column;
@@ -120,7 +120,7 @@ header p {
   transition: 0.3s;
 }
 
-/* 7. PROJECTS SECTION */
+/* Projects-section */
 .projects-section {
   padding: 2rem 1rem;
 }
@@ -132,11 +132,6 @@ header p {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 1rem;
-}
-
-.featured-project {
-  margin-top: 3rem;
-  padding: 2rem 1rem;
 }
 
 .project-card {
@@ -196,7 +191,7 @@ header p {
   text-align: center;
 }
 
-/* 8. BUTTONS */
+/* Buttons */
 .btn {
   display: inline-block;
   margin-top: 1rem;
@@ -213,7 +208,7 @@ header p {
   transform: translateY(-2px);
 }
 
-/* 9. ABOUT SECTION */
+/* About section */
 .about-flex {
   display: flex;
   flex-wrap: wrap;
@@ -235,8 +230,8 @@ header p {
   height: 200px;
   object-fit: cover;
   border-radius: 50%;
-  border: 4px solid white;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  border: 4px solid #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 .text-box {
@@ -251,7 +246,7 @@ header p {
   color: #1e1e1e;
 }
 
-/* 10. CONTACT SECTION */
+/* Contact section */
 .contact-section {
   padding: 3rem 1rem;
   max-width: 700px;
@@ -296,7 +291,7 @@ header p {
   background-color: #005f7f;
 }
 
-/* 11. FOOTER */
+/* Footer */
 footer {
   text-align: center;
   padding: 1.5rem;
@@ -319,7 +314,7 @@ footer {
   color: var(--accent1);
 }
 
-/* 12. RESPONSIVE DESIGN */
+/* Responsiveness */
 @media (max-width: 768px) {
   .navbar-links {
     display: none;

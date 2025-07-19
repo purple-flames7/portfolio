@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
-// 🧠 Featured Project Rotator (on index.html only)
+//  Featured Project Rotator on index.html only
 const projects = [
   {
     title: "BuzzBrain",
@@ -38,10 +38,10 @@ const projects = [
     github: "#",
   },
   {
-    title: "NGO Page (Coming Soon)",
-    description: "A mission-driven website for a grassroots CBO/NGO project.",
+    title: "Tasty Munchies",
+    description: "A website for a fictional restaurant in Nairobi.",
     tech: "HTML, CSS",
-    image: "images/placeholder.png",
+    image: "images/TM-screenshot.png",
     live: "#",
     github: "#",
   },
